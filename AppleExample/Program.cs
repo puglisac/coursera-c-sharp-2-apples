@@ -6,7 +6,13 @@ namespace AppleExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Apple apple = new Apple();
+            Console.WriteLine(apple.AmountLeft);
+            Console.WriteLine(apple.Organic);
+
+            Apple apple1 = new Apple(50, true);
+            Console.WriteLine(apple1.AmountLeft);
+            Console.WriteLine(apple1.Organic);
         }
     }
 }

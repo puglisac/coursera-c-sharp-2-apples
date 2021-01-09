@@ -25,8 +25,13 @@ namespace AppleExample
             amountLeft -= size;
         }
 
-        public Apple()
+        #region constructors
+        public Apple(float amountLeft = 100, bool organic = false )
         {
+            this.amountLeft = amountLeft;
+            this.organic = organic;
         }
+
+        #endregion
     }
 }
